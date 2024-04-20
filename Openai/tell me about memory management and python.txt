@@ -1,0 +1,9 @@
+Memory management refers to the process of allocating and deallocating memory in a computer system efficiently, ensuring that programs can use memory resources effectively. Python, a high-level programming language, also incorporates memory management techniques implemented through its built-in features and the underlying Python interpreter.
+
+1. Automatic Memory Management: Python employs an automatic memory management technique known as Garbage Collection. It relieves programmers from explicitly allocating and deallocating memory, as it automatically detects and reclaims memory that is no longer in use. The garbage collector inspects the objects in memory, identifies unused ones, and returns the corresponding memory space for reuse.
+
+2. Reference Counting: Python's memory management primarily utilizes reference counting. Each object in memory has a reference count - the number of references pointing to it. When an object's reference count reaches zero, it is no longer reachable and can be garbage collected. Reference counting mechanism automatically takes care of most memory deallocations in Python.
+
+3. Cyclical Garbage Collection: Python's garbage collector also handles cyclic references. In case multiple objects refer to each other forming a cycle and there are no external references to this cycle, traditional reference counting would not be sufficient. In such cases, Python employs an algorithm called "cycle detection" that identifies and collects cyclic garbage.
+
+4. Memory
